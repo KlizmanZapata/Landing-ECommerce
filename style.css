@@ -265,3 +265,53 @@ header .icons .tienda{
 .arrow-right {
   width: calc(50px - 10px);
 }
+
+/* Media Query para dispositivos con un ancho máximo de 768px (por ejemplo, dispositivos móviles) */
+@media screen and (max-width: 768px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+  }
+  .hero {
+    grid-template-columns: 1fr; /* Cambia la disposición a una sola columna */
+    grid-template-rows: auto; /* Restaura la altura automática */
+  }
+
+  .info {
+    order: 2; /* Cambia el orden de visualización de la segunda columna */
+  }
+
+  .hero-image {
+    order: 1; /* Cambia el orden de visualización de la primera columna */
+    margin-left: auto; /* Ajusta el margen izquierdo a automático */
+    margin-right: auto; /* Ajusta el margen derecho a automático */
+  }
+
+  .hero-image video {
+    width: 100%; /* Establece el ancho del video al 100% */
+    height: auto; /* Ajusta automáticamente la altura del video */
+    max-width: 400px; /* Establece un máximo de ancho para el video */
+    border-radius: 20px; /* Mantiene el borde redondeado */
+  }
+
+  .info {
+    margin: 20px; /* Añade un margen a la sección de información */
+  }
+
+  .info-subtitle {
+    font-size: 1.2rem; /* Reduce el tamaño del texto */
+    text-align: center; /* Centra el texto */
+  }
+
+  .buttons-container {
+    margin-left: auto; /* Ajusta el margen izquierdo a automático */
+    margin-right: auto; /* Ajusta el margen derecho a automático */
+  }
+
+  .button {
+    padding: 15px 25px; /* Reduce el tamaño de los botones */
+    margin-bottom: 10px; /* Añade un poco más de espacio entre los botones */
+  }
+}
