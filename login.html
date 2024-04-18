@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formstyles.css">
+    <link rel="stylesheet" href="transitions.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+
+    <main>
+
+        <form class="closed" action="#">
+            <div class="content">
+
+                <h2>¡Login ViHolic!</h2>
+                
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="text" placeholder="example@mail.com" id="email" name="email">
+                </div>
+                    
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                
+                <div class="button-container">
+                    <button type="submit">
+                        <a href="index.html">Iniciar sesion</a>
+                    </button>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="button-container" id="open-form">
+            <button type="button" onclick="document.querySelector('form').classList.remove('closed')">Iniciar sesion</button>
+        </div>
+
+    </main>
+    
+    <script>
+        function showSuccessMessage() {
+            alert("Ha iniciado sesión correctamente. ¡Tiene nuevos cupones disponibles!");
+        }
+    </script>
+</body>
+</html>

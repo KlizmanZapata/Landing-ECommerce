@@ -1,0 +1,267 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: lavender; /* Color morado claro */
+}
+
+/*main {
+  max-width: 1200px;
+  margin: 0 auto;
+}*/
+
+header{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; 
+  align-items: center;
+  margin-bottom: 8px;
+}
+/*header .logo{
+  margin-left: 50px;
+}*/
+header .logo img{
+  width: 80px;
+  height: 60px;
+}
+header .header-icons-container{
+  width: 100%;
+  height: 50px;
+  display: grid;
+  justify-self: end;
+  /*margin-right: 145px;*/
+}
+header .header-icons-container .icons{
+  width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-self: end;
+  /*margin-right: 10px;*/
+}
+header .icons span{
+  color: black;
+}
+header .icons .tienda{
+  color: black;
+}
+
+/*Title*/
+.super{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.super-title {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+/* First section - Hero */
+
+.hero{
+  display: grid;
+  grid-template-columns: 2fr minmax(100px, 3fr);
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-image{
+  margin-left: 25%;
+}
+.hero-image video{
+  width: 400px;
+  height: 600px;
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+.info-subtitle {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  text-align: justify;
+}
+
+.info-button {
+  border: none;
+  border-radius: 20px;
+  color: #333;
+  background-color: #fb8c00;
+  font-weight: 900;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+/* Second section - Productos */
+
+.services-title {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px 0 50px 0;
+}
+
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-rows: repeat(2, minmax(150px, 1fr));
+  grid-gap: 50px;
+}
+
+.dishes-image {
+  margin: 0;
+}
+
+.dishes-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dishes-image__big {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+/* Third section - Descuentos */
+
+.menu-title {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 100px 0 50px 0;
+}
+
+.plates {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 100px;
+}
+
+.plates-image {
+  margin: 0;
+  background-color: #99aae4;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.plates-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/*--------------------------*/
+
+.title {
+  color: rgb(76, 76, 161);
+  text-align: center;
+  font-size: 50px;
+}
+
+.buttons-container {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 20%;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 20px 30px;
+  background-color: #99aae4; /* Color de fondo de los botones */
+  border: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.button a{
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+.discount {
+  color: gray;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.discount-container {
+  position: relative;
+}
+
+.discount-text {
+  position: absolute;
+  left: 20%;
+  color: rgb(15, 15, 15);
+  font-size: 2 em;
+  font-weight: bold;
+}
+
+/* ----------------- services ---------------- */
+.services {
+  text-align: center; /* Centra el contenido */
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2em;
+  color: rgb(2, 2, 2);
+  font-weight: bold;
+}
+.category-title {
+  text-align: center;
+  font-size: 30px;
+  color:rgb(255, 255, 255);
+  background-color: rgb(153, 153, 223);
+}
+.dishes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Ajusta el margen superior */
+}
+.dishes-image {
+  width: calc(270px - 10px); /* Ajusta el tamaño de las imágenes */
+  margin-bottom: 10px;
+  margin: 0 5px 10px;
+  position: relative;
+}
+.dishes-image img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow-left {
+  width: calc(50px - 10px);
+}
+.arrow-right {
+  width: calc(50px - 10px);
+}
