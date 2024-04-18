@@ -267,13 +267,30 @@ header .icons .tienda{
 }
 
 /* Media Query para dispositivos con un ancho máximo de 768px (por ejemplo, dispositivos móviles) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
   body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra el contenido horizontalmente */
   }
+  header, main {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100%; /* Establece el máximo ancho disponible */
+  }
+
+  /* Ajustes adicionales para el contenido dentro del header */
+  .logo, .header-icons-container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100%; /* Establece el máximo ancho disponible */
+    text-align: center; /* Centra el contenido dentro del header */
+  }
+
+  .header-icons-container .icons {
+    width: auto; /* Restaura el ancho automático */
+    justify-content: center; /* Centra los iconos horizontalmente */
+  }
+
   .hero {
     grid-template-columns: 1fr; /* Cambia la disposición a una sola columna */
     grid-template-rows: auto; /* Restaura la altura automática */
